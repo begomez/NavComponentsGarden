@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NavComponents</string>
+
+    <string name="main_activ">Main activity</string>
+    <string name="main_fragment">Main fragment</string>
+
+    <string name="settings_activ">Settings activity</string>
+    <string name="settings_fragment">Settings fragment</string>
+
+    <string name="flow_activity">Flow activity</string>
+    <string name="flow_step_1_fragment">Flow step 1 fragment</string>
+    <string name="flow_step_2_fragment">Flow step 2 fragment</string>
+    <string name="flow_step_3_fragment">Flow step 3 fragment</string>
+
+    <string name="help_activity">Help activity</string>
+</resources>
