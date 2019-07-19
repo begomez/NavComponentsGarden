@@ -5,14 +5,14 @@
 
     <string name="settings_fragment">Settings fragment</string>
 
-    <string name="flow_step_1_fragment">Step 1 fragment</string>
-    <string name="flow_step_2_fragment">Step 2 fragment</string>
-    <string name="flow_step_3_fragment">Step 3 fragment</string>
+    <string name="flow_step_1_fragment">Step 1 fragment...</string>
+    <string name="flow_step_2_fragment">Step 2 fragment...</string>
+    <string name="flow_step_3_fragment">Step 3 fragment!</string>
 
     <string name="help_activity">Help activity</string>
 
     <string name="section_home">Home</string>
-    <string name="section_profile">Profile</string>
+    <string name="section_settings">Settings</string>
     <string name="section_flow">Flow</string>
     <string name="section_help">Help</string>
 

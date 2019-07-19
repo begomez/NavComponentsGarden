@@ -2,15 +2,16 @@
 
 
 <navigation
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
 
-        android:id="@+id/home_nav_graph"
+    android:id="@+id/home_graph"
 
-        app:startDestination="@+id/home_dest"
-        >
+    app:startDestination="@+id/home_dest"
+    >
 
+    <!-- XXX: destinations on current graph -->
     <fragment
         android:id="@+id/home_dest"
 
@@ -20,6 +21,19 @@
         tools:layout="@layout/fragment_home"
         />
 
+    <!-- XXX: more destinations from other navigation graphs, referenced by include -->
+
     <include app:graph="@navigation/flow_graph" />
+
+    <include app:graph="@navigation/settings_graph" />
+
+    <activity
+        android:id="@+id/help_dest"
+
+        android:name="com.example.navcomponents.help.HelpActivity"
+        android:label="@string/section_help"
+
+        tools:layout="@layout/activity_help"
+    />
 
 </navigation>

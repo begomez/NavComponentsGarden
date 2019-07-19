@@ -10,8 +10,9 @@ import com.example.navcomponents.R
 
 
 /**
- * A simple [Fragment] subclass.
+ * Content for settings module.
  *
+ * Created by bernatgomez on July,2019
  */
 class SettingsFragment : Fragment() {
 

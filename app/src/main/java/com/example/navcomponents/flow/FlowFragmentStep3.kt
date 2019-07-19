@@ -12,11 +12,12 @@ import kotlinx.android.synthetic.main.fragment_flow_step3.*
 
 
 /**
- * A simple [Fragment] subclass.
+ * Content for sample flow module.
  *
+ * Created by bernatgomez on July,2019
  */
 class FlowFragmentStep3 : Fragment() {
-    
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -31,6 +32,5 @@ class FlowFragmentStep3 : Fragment() {
         this.setListeners()
     }
 
-    fun setListeners() = this.step3_main_btn.setOnClickListener { this.findNavController().navigate(R.id.home_dest) }
-
+    private fun setListeners() = this.step3_main_btn.setOnClickListener { this.findNavController().navigate(R.id.home_dest) }
 }

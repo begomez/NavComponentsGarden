@@ -12,8 +12,9 @@ import kotlinx.android.synthetic.main.fragment_flow_step2.*
 
 
 /**
- * A simple [Fragment] subclass.
+ * Content for sample flow module.
  *
+ * Created by bernatgomez on July,2019
  */
 class FlowFragmentStep2 : Fragment() {
 
@@ -31,6 +32,5 @@ class FlowFragmentStep2 : Fragment() {
         this.setListeners()
     }
 
-    fun setListeners() = this.step2_main_btn.setOnClickListener { this.findNavController().navigate(R.id.flow_step_3_dest) }
-
+    private fun setListeners() = this.step2_main_btn.setOnClickListener { this.findNavController().navigate(R.id.flow_step_3_dest) }
 }

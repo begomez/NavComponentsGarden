@@ -10,10 +10,9 @@ import com.example.navcomponents.R
 
 
 /**
- * A simple [Fragment] subclass.
- * Use the [HomeFragment.newInstance] factory method to
- * create an instance of this fragment.
+ * Content for home module.
  *
+ * Created by bernatgomez on July,2019
  */
 class HomeFragment : Fragment() {
 

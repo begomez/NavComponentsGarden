@@ -10,9 +10,15 @@
         />
 
     <item
-        android:id="@+id/flow_nav_graph"
+        android:id="@+id/flow_graph"
 
         android:title="@string/section_flow"
-    />
+        />
+
+    <item
+        android:id="@+id/settings_graph"
+
+        android:title="@string/section_settings"
+        />
 
 </menu>

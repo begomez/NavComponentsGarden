@@ -6,14 +6,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.ViewModel
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.navGraphViewModels
 import com.example.navcomponents.R
 import kotlinx.android.synthetic.main.fragment_flow_step1.*
 
 
 /**
- * A simple [Fragment] subclass.
+ * Content for sample flow module.
  *
+ * Created by bernatgomez on July,2019
  */
 class FlowFragmentStep1 : Fragment() {
 
@@ -31,5 +34,5 @@ class FlowFragmentStep1 : Fragment() {
         this.setListeners()
     }
 
-    fun setListeners() = this.step1_main_btn.setOnClickListener { this.findNavController().navigate(R.id.flow_step_2_dest) }
+    private fun setListeners() = this.step1_main_btn.setOnClickListener { this.findNavController().navigate(R.id.flow_step_2_dest) }
 }
