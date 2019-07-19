@@ -23,15 +23,16 @@
 
     <!-- XXX: more destinations from other navigation graphs, referenced by include -->
 
-    <include app:graph="@navigation/flow_graph" />
+    <include app:graph="@navigation/flow_graph" app:launchSingleTop="true" />
 
-    <include app:graph="@navigation/settings_graph" />
+    <include app:graph="@navigation/settings_graph" app:launchSingleTop="true" />
 
     <activity
         android:id="@+id/help_dest"
 
         android:name="com.example.navcomponents.help.HelpActivity"
         android:label="@string/section_help"
+        app:launchSingleTop="true"
 
         tools:layout="@layout/activity_help"
     />

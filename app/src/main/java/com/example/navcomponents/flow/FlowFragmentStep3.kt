@@ -32,5 +32,5 @@ class FlowFragmentStep3 : Fragment() {
         this.setListeners()
     }
 
-    private fun setListeners() = this.step3_main_btn.setOnClickListener { this.findNavController().navigate(R.id.home_dest) }
+    private fun setListeners() = this.step3_main_btn.setOnClickListener { this.findNavController().popBackStack(R.id.home_dest, false) }
 }
