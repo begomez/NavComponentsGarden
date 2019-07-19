@@ -11,11 +11,11 @@ import com.example.navcomponents.R
 
 /**
  * A simple [Fragment] subclass.
- * Use the [MainFragment.newInstance] factory method to
+ * Use the [HomeFragment.newInstance] factory method to
  * create an instance of this fragment.
  *
  */
-class MainFragment : Fragment() {
+class HomeFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,7 +27,7 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main, container, false)
+        return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
 
@@ -36,11 +36,11 @@ class MainFragment : Fragment() {
          * Use this factory method to create a new instance of
          * this fragment using the provided parameters.
          *
-         * @return A new instance of fragment MainFragment.
+         * @return A new instance of fragment HomeFragment.
          */
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            MainFragment().apply {
+            HomeFragment().apply {
                 arguments = Bundle()
             }
     }
