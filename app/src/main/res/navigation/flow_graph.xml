@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/flow_nav_graph"
+
+    app:startDestination="@id/flow_step_1_dest"
+    >
+
+    <!-- 1 -->
+    <fragment
+        android:id="@+id/flow_step_1_dest"
+
+        android:name="com.example.navcomponents.flow.FlowFragmentStep1"
+        android:label="@string/section_flow"
+
+        tools:layout="@layout/fragment_flow_step1"
+        >
+
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/flow_step_2_dest" />
+
+    </fragment>
+
+    <!-- 2 -->
+    <fragment
+        android:id="@+id/flow_step_2_dest"
+
+        android:name="com.example.navcomponents.flow.FlowFragmentStep2"
+        android:label="@string/section_flow"
+
+        tools:layout="@layout/fragment_flow_step2"
+        >
+
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/flow_step_3_dest" />
+
+    </fragment>
+
+    <!-- 3 -->
+    <fragment
+        android:id="@+id/flow_step_3_dest"
+
+        android:name="com.example.navcomponents.flow.FlowFragmentStep3"
+        android:label="@string/section_flow"
+
+        tools:layout="@layout/fragment_flow_step3"
+        >
+
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/home_dest" />
+
+    </fragment>
+
+</navigation>
